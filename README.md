@@ -1,5 +1,5 @@
 # Cryptographic hash function based on the Lagrange Polynomial
-This repository hosts the code of a whole new cryptographic function, using the Lagrange Polynomial. A new hashing polynomial has been created by myself. The justification, and the explicit method is explained (in french) in the following paper : [Study](https://devnathan.github.io/source/TIPE.pdf)
+This repository hosts the code of a whole new cryptographic function, using the Lagrange Polynomial. A new hashing polynomial has been created by myself. The justification, and the explicit method is explained (in french) in the following paper : [Study paper](https://devnathan.github.io/source/TIPE.pdf)
 
 #### ⚠️ WARNING : This is NOT a secured cryptographic function. 
 No security proof has been made. It has been created in order to give an pratical and efficient example of what can be done with that method. This should not be used for other reason than study and absolutely not for security reasons.
@@ -46,7 +46,7 @@ lagrange = Lagrange(hash_len)
 
 message = "Hello world!"
 
-lagrange.hash(message)
+hash = lagrange.hash(message)
 ```
 
 ### 3 - Output 
@@ -57,3 +57,5 @@ Hashing "Hello world !" on 32 char.
 
 ** Sucessfuly hashed in  0.013  seconds **
 ```
+You can see more example, including proof of the padding and the avalanche effect, in the [study paper]((https://devnathan.github.io/source/TIPE.pdf)
+)

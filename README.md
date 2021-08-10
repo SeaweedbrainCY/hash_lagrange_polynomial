@@ -44,9 +44,9 @@ hash_len = 32 # Length of the produced hash (in char)
 
 lagrange = Lagrange(hash_len)
 
-message = "Hello world!"
+message = "Hello world !"
 
-hash = lagrange.hash(message)
+hash_str = lagrange.hash(message)
 ```
 
 ### 3 - Output 
